@@ -1,0 +1,177 @@
+
+body{
+  justify-content: center;
+  margin: auto;
+  padding:100px 200px;
+   background-color: whitesmoke;
+
+}
+
+section{
+ background-color: white;
+ border-radius: 10px;
+ padding: 50px;
+}
+.nav{
+  padding-bottom: 40px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#mobile{
+  display: none;
+  align-items: center;
+}
+.search {
+position: relative;
+cursor: pointer;
+}
+.search i{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+input{
+  border: none;
+  outline: none;
+  padding: 15px 50px;
+  border:  1px solid whitesmoke;
+}
+#col{
+  display: flex;
+}
+ul li{
+  
+ list-style: none;
+}
+
+.list li a{
+   text-decoration: none;
+   padding: 10px 15px;
+   margin-left: 30px;
+   color: black;
+}
+
+#col a:hover{
+  background-color: rgb(153, 112, 189);
+  color: white
+  ;
+  border-radius: 4px;
+}
+.man{
+  display: flex;
+  /* border: 1px  solid black; */
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  background-color:hsla(0, 9%, 98%, 0.984);
+  border-radius: 7px;
+}
+.man:hover{
+background-color: #ffffff;
+box-shadow:2px 2px  2px 2px rgb(183, 172, 194) ;
+}
+.man img{
+  border-radius: 50%;
+  width: 25%;
+  height: 50%;
+}
+.list{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#o{
+  border: 1px solid rgb(215, 213, 216);
+  text-decoration: none;
+  padding: 3px 20px;
+  border-radius: 20px;
+margin-bottom: px;
+color: blueviolet;
+background-color: white;
+}
+#col a{
+  margin-top: 20px;
+}
+#col .active{
+  right: 0;
+}
+#close{
+  display: none;
+}
+
+@media (max-width:780px) {
+  body{
+    overflow-x: hidden;
+  }
+#col{
+  padding: 80px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(250, 239, 239);
+    box-shadow: 0 40px 60px rgb(183, 172, 194);
+    transition: 0.3s;
+}
+#col.active{
+  right: 0;
+}
+
+.list ul li{
+  margin-bottom: 25px;
+}
+#mobile{
+  display: flex;
+}
+#mobile{
+  position:relative;
+  font-size: 24px;
+  padding-left: 3px;
+}
+#mobile i{
+  position: absolute;
+  bottom: 50px;
+}
+section{
+ background-color: white;
+ border-radius: 10px;
+padding: 30px 50px;
+ width: 100%;
+ justify-content: center;
+ height: 100%;
+}
+#close{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: black;
+  font-size: 24px;
+  display: initial;
+}
+input {
+    padding: 15px 80px;
+}
+}
+@media (max-width:480px) {
+  section{
+background-color:white;
+width: 100%;
+}
+body{
+  overflow-x: hidden;
+}
+}
